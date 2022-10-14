@@ -1,0 +1,1047 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* 
+typography start */
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body{
+  font-family:sans-serif, Arial;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+ul{
+  list-style: none;
+}
+ol{
+  list-style: none;
+}
+.float_left{
+ float: left;
+}
+.float_right{
+  float: right;
+}
+.clear{
+  overflow: hidden;
+}
+
+.full_wrapper{
+  width: 100%;
+}
+.wrapper{
+  width:1150px;
+  margin: 0 auto;
+}
+
+/* typography end */
+
+/* main css start */
+
+/* top header part css start */
+.header_bg{
+  background: black;
+}
+.header_part{
+  width: 100%;
+  height: 50px;
+}
+.header_top_left{
+  width: 50%;
+}
+.header_top_left ul{
+ 
+}
+.header_top_left ul li{
+  padding-top: 13px;
+  margin-right: 40px;
+}
+.header_top_left ul li a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.header_left_icon{
+  padding: 5px;
+  color: white;
+}
+.header_top_right{}
+.header_top_right ul{}
+.header_top_right ul li{}
+.header_top_right ul li a:hover{
+}
+.header_right_icon {
+  margin-right: 30px;
+  color: white;
+  padding-top: 2px;
+}
+.header_right_icon:hover{
+color: aquamarine;
+}
+.header_top_right_input{
+  padding-top: 14px;
+}
+.search_feild{
+  width: 230px;
+  height: 23px;
+  border: none;
+  border-radius: 2px;
+  padding-left: 15px;
+  font-size:12px;
+}
+
+/* top header part css end */
+
+/* menu part css start */
+
+
+.nav_part {
+  width: 100%;
+  height: 80px;
+}
+.header_logo_part{
+  width: 50%;
+}
+.header_logo_part img{
+  width: 60px;
+  height: auto;
+  padding:15px 0px;
+}
+.header_menu_part {
+width: 50%;
+float: right;
+}
+.header_menu_part ul{
+  list-style-type: none;
+  float: right;
+}
+.header_menu_part ul li{
+  float: left;
+  margin-right: 45px;
+  margin-top: 32px;
+}
+.header_menu_part ul li:last-child{
+  margin-right: 0px;
+}
+.header_menu_part ul li a{
+text-decoration: none;
+color: black; 
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: 700;
+}
+.header_menu_part ul li a:hover{
+  color: #1B9A8D;
+}
+
+/* menu part css end */
+
+/* banner part css start */
+
+.banner_bg{
+  background-image: url(../img/international_medical_students_90852171.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+.banner_bg:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+background:rgba(68,68,68,0.3);
+top: 0;
+left: 0;
+z-index: -1;
+}
+.banner_text{
+  padding-top: 110px;
+  color: white;
+  
+}
+.banner_text h4{
+  font-family: 'Montserrat', serif;
+  font-size:30px;
+}
+.banner_text h1{
+  font-family: 'Roboto Slab', serif;
+  font-size:60px;
+  margin-bottom:10px;
+}
+.banner_text p{
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+}
+.banner_buttons button{
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px 30px;
+  background:none;
+  color: white;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+.banner_buttons button:hover{
+  background:#1CA79A;
+  cursor: pointer;
+}
+
+/* about part css start */
+
+.about_bg{
+  background: #EFEFEF;
+  padding:80px 0px;
+  overflow: hidden;
+}
+.about_part{
+ 
+}
+.about_part_left{
+  width: 570px;
+  margin-right: 10px;
+  position: relative;
+}
+.about_part_left:after{
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:rgba(0,0,0,0.5)
+}
+.about_part_left img{
+}
+.about_part_img{}
+.about_part_icon{
+  width: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.5s ease-in-out;
+}
+.about_part_icon:hover{
+  background: #1CA79A;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.about_part_right{
+  width: 570px;
+}
+.about_part_right h2{
+  font-family: 'Roboto Slab', serif;
+  font-size:36px;
+  padding-left: 10px;
+  color: #1B9A8D;
+}
+.about_part_right p{
+  line-height: 1.5;
+  padding-left: 10px;
+}
+.about_part_right button{
+  font-family: 'Montserrat', sans-serif;
+  font-size:14px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background:#1CA79A;
+  border: none;
+  margin-top: 10px;
+  margin-left:10px;
+  color: white;
+  cursor: pointer;
+}
+
+/* popular course part start */
+.popular_course_part{}
+.card_group{}
+.card_title{
+
+}
+.card_title h2{
+  padding:80px 0px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 48px;
+  color: #1CA79A;
+  text-align: center;
+}
+.single_card{
+  width: 31%;
+  border: 2px solid grey;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+.single_card:last-child{
+  margin-right: 0px;
+}
+.single_card_info{
+  padding: 20px;
+  text-align: center;
+}
+.single_card_info img{}
+.single_card_info h4{
+  color: #1B9A8D;
+  margin-bottom: 15px;
+  font-size:24px;
+}
+.single_card_info p{}
+.card_button1,.card_button2{
+  padding: 8px 20px;
+  background: #1B9A8D;
+  border: 0.5px solid lightGrey;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom:10px;
+}
+
+/* popular course part end */
+
+/* event part css start */
+.event_bg{
+  background: #EFEFEF;
+}
+.event_part{}
+.event_title{}
+.event_title h2{
+  font-family: 'Roboto Slab', serif;
+  font-size:48px;
+  color: #1CA79A;
+  text-align: center;
+  padding: 70px 0px;
+}
+.single_event{
+  overflow: hidden;
+  padding: 30px;
+  background: white;
+  border: 2px dashed lightGrey;
+  box-shadow: 4px 4px 10px lightGrey;
+}
+.single_event{
+  margin-bottom:50px;
+}
+.event_body{
+}
+.event_left{
+  background:#1B9A8D;
+  text-align: center;
+  color: white;
+  margin-right: 20px;
+}
+.event_left_top{
+ padding: 10px;
+}
+.event_left_top h2{
+  font-size: 48px;
+  padding: 4px 40px;
+  font-family: 'Roboto Slab', serif;
+}
+.event_left_top h4{
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+}
+.event_left_bottom{}
+.event_left_bottom p{
+  padding: 10px;
+  border-top: 5px solid white;
+  font-family: 'Roboto Slab', serif;
+}
+
+.event_middle{
+  width: 550px;
+}
+.event_middle h4{
+  padding-top: 5px;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+.event_middle p{
+  font-size:14px
+}
+.event_middle p:last-child{
+  padding-top: 30px;
+}
+
+.event_right{}
+.event_right img{
+
+}
+
+
+.all_courses_btn{
+  margin:0px 500px;
+  padding: 8px 20px;
+  background: #1B9A8D;
+  border: 0.5px solid lightGrey;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+
+
+/* event part css end */
+
+/* registration part start */
+.registration_bg{
+  background-image: url(../img/Axis\ medical\ School\ registration\ bg.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  overflow:hidden;
+  width:100%;
+  position: relative;
+  z-index: 1;
+}
+.registration_bg:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.registration_part{
+  margin-top: 100px;
+  padding-bottom:100px;
+}
+.regi_left{
+  margin-top: 65px;
+  width: 750px;
+  float: left;
+  text-align: center;
+  color: white;
+}
+.regi_left h2{
+  font-size: 48px;
+  font-family: 'Roboto Slab', serif;
+}
+.regi_left p{
+  font-size:14px;
+  width: 416px;
+  margin-left: 165px;
+}
+
+.regi_right{
+  float:right;
+  width: 360px;
+  height: 400px;
+  margin-bottom: 100px;
+}
+.regi_right_top{
+  width: 100%;
+  height: 150px;
+  background: #1CA79A;
+  text-align: center;
+}
+.regi_right h3{
+  padding-top: 35px;
+  color: white;
+  font-size: 33px;
+  font-family: 'Roboto Slab', serif;
+}
+.regi_right p{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+.form_body{
+  background: #EFEFEF;
+  width: 100%;
+}
+.same_registration_input{
+  margin: 10px 45px;
+ width: 250px;
+ padding: 10px;
+}
+.registration_btn{
+  margin: 10px 45px;
+  width: 275px;
+  padding: 10px;
+  background: #1CA79A;
+  border: none;
+  color: white;
+}
+/* registration part end */
+
+/* gallery part css start */
+.gallery_bg{}
+.gallery_part{}
+.gallery_title h2{
+  font-family: 'Roboto Slab', serif;
+  font-size: 48px;
+  color: #1CA79A;
+  text-align: center;
+  padding: 70px 0px;
+}
+.gallery_body{}
+.gallery_row{
+  margin: 20px;
+}
+.gallery_img{
+  width: 32%;
+  margin-right: 15px;
+}
+.gallery_img:last-child{
+  margin-right: 0px;
+}
+/* gallery part css end */
+
+/* banner2 css start */
+.banner2_bg{
+  margin-top: 100px;
+  background-image: url(../img/Axis\ banner2\ img.png);
+  background-size: cover;
+  width: 100%;
+}
+
+.banner2_part{}
+.banner2_body{
+  margin: 12px 0px;
+}
+.banner2_single_item{
+  overflow: hidden;
+  float: left;
+  margin: 20px;
+  text-align: center;
+  margin-right:86px;
+}
+.banner2_single_item:last-child{
+  margin-right: 0px;
+}
+.banner2_single_item h2{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+.banner2_icon{
+  font-size: 34px;
+}
+.banner2_single_icon{
+  color: white;
+}
+
+.banner2_single_icon> .fa-truck-medical{
+  background:#1B9A8D;
+  padding: 20px;
+  border-radius:50%;
+  overflow:hidden;
+}
+.banner2_single_icon> .fa-graduation-cap{
+  background:#B400FF;
+  padding: 20px;
+  border-radius:50%;
+  overflow:hidden;
+}
+.banner2_single_icon> .fa-book{
+  background:#FF6C00;
+  padding: 20px;
+  border-radius:50%;
+  overflow:hidden;
+}
+.banner2_single_icon>.fa-user-gear{
+  background:#08A001;
+  padding: 20px;
+  border-radius:50%;
+  overflow:hidden;
+}
+.banner2_single_icon>.fa-bullhorn{
+  background:#B400FF;
+  padding: 20px;
+  border-radius:50%;
+  overflow:hidden;
+}
+.banner2_single_icon>.fa-stethoscope{
+  background:#FF6C00;
+  padding: 20px;
+  border-radius:50%;
+  overflow:hidden;
+}
+/* banner2 css end */
+
+/* blog part css start */
+.blog_bg{
+  background:white;
+}
+.blog_part{}
+.blog_part_title{}
+.blog_part_title h2{
+  color: #1CA79A;
+  font-size: 48px;
+  margin: 100px auto;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+.blogs_body{}
+.left_side_blogs{}
+.single_hr_blog{
+  width: 750px;
+  height: 308px;
+  border: 1px solid grey;
+  box-shadow:1px 1px 5px 1px lightGrey;
+  margin-bottom: 25px;
+}
+.single_hr_blog_left{}
+.single_hr_blog_left_img{
+  width: 100%;
+  height: 308px;
+}
+.single_hr_blog_right{
+  float: right;
+  width: 470px;
+}
+.single_hr_blog_right h2{
+  color: #1CA79A;
+  margin: 30px 10px;
+}
+.single_hr_blog_right p{
+  color: #1CA79A;
+  margin-left: 10px;
+  margin-bottom: 65px;
+}
+.blog_inner_btn{
+  padding:10px 20px;
+  background: #1B9A8D;
+  border: 0.5px solid lightGrey;
+  border-radius:5px;
+  color: white;
+  cursor: pointer;
+}
+.blog_inner_btn:last-child{
+  margin-right: 20px;
+}
+
+.right_side_blogs{
+  width: 365px;
+  height: 644px;
+  border: 1px solid grey;
+  box-shadow:1px 1px 5px 1px lightGrey;
+  margin-right: 12px;
+}
+.single_vr_blog{
+  overflow: hidden;
+  margin: 0px;
+  
+}
+.single_vr_blog_img{
+  width: 100%;
+  height: 308px;
+  margin-bottom: 25px;
+}
+.single_vr_blog_info{}
+.single_vr_blog_info h2{
+  margin-bottom: 25px;
+  color: #1CA79A;
+  padding: 8px;
+  text-align: center;
+  padding: 10px;
+}
+.single_vr_blog_info p{
+  padding: 8px;
+  color: #1CA79A;
+  margin-bottom:30px;
+  text-align: center;
+}
+.vr_btn{
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.vr_btn1{
+  margin-left: 20px;
+}
+/* blog part css end */
+
+
+/* latest video part css start */
+.latest_vid_bg{}
+.video_part{}
+.vid_row{
+  margin-top: 20px;
+}
+.vid_row_margin{
+  margin-top: 20px;
+}
+.single_vid{
+  width: 24%;
+  margin-right: 1.33%;
+  float: left;
+  padding: 0px;
+  margin-top: 20px;
+}
+.single_vid:last-child{
+  margin-right: 0%;
+  padding: 0%;
+}
+.vid_img{
+  width: 265px;
+  height: 150px;
+  text-align: right;
+}
+.vid_text p{
+  color: #1CA79A;
+}
+/* latest video part css end */
+
+
+/* client part css start */
+.clients_part_bg{
+  background:#EFEFEF;
+  margin-top: 50px;
+}
+.client_part{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.single_client{
+  width: 120px;
+  float: left;
+  margin-right: 80px;
+  margin-bottom: 50px;
+}
+.single_client:last-child{
+  margin-right: 0px;
+}
+.single_client_img{
+  width: 100%;
+  height:80px ;
+}
+
+/* client part css end */
+
+/* footer top section css start */
+.footer_top_bg{
+  background: #242424;
+  color: white;
+  padding: 80px 0px;
+}
+.footer_top_section{}
+.top_footer_part{}
+.left_top_footer{
+  width: 370px;
+}
+.left_top_footer h3{
+  margin-bottom:20px;
+}
+.left_top_footer ul{}
+.left_top_footer ul li{}
+
+
+.middle_top_footer{
+  width: 370px;
+}
+.middle_top_footer h3{
+  margin-bottom: 20px;
+}
+.middle_top_footer ul{}
+.middle_top_footer ul li{
+  color: white;
+}
+.middle_top_footer ul li a{
+  color: white;
+}
+
+.footer_input_feild{
+  background: #242424;
+  color: white;
+  width: 345px;
+  border-color: #1B9A8D;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.top_footer_social_icon{
+  padding-right:145px
+}
+tr{
+  color: white;
+}
+/* footer top section css end */
+
+/* footer css start */
+.footer_bg{
+  background: #000;
+  padding: 20px;
+  color:white;
+}
+/* footer css end */
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

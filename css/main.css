@@ -398,7 +398,9 @@ z-index: -1;
 .event_bg{
   background: #EFEFEF;
 }
-.event_part{}
+.event_part{
+  padding-bottom:50px;
+}
 .event_title{}
 .event_title h2{
   font-family: 'Roboto Slab', serif;
@@ -851,15 +853,19 @@ z-index: -1;
 .top_footer_social_icon{
   padding-right:145px
 }
-tr{
-  color: white;
+.top_footer_right{
+
 }
+.form_part{
+  text-align: center;
+}
+.form{}
 /* footer top section css end */
 
 /* footer css start */
 .footer_bg{
   background: #000;
-  padding: 20px;
+  padding: 20px 0px;
   color:white;
 }
 /* footer css end */

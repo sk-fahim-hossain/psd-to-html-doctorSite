@@ -178,7 +178,7 @@ img {
             margin-top: 20px;
         }
         .all_courses_btn{margin: 0px 0px 50px 308px;/*! margin-bottom: 50px; */}
-        .card_title h2{}
+        .card_title h2{font-size: 36px;}
         .single_card{margin-right: 1%;margin-left: 0.75%;width: 98%;}
         .event_title h2{
            
@@ -343,3 +343,61 @@ px      68    160    252    344    436    */
 
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min-device-pixel-ratio: 2) {}
+
+
+@media only screen and (min-width: 380px) and (max-width: 479px){
+    .wrapper{
+            width:98%
+        }
+    .header_logo_part {
+        margin: 5px 160px;
+        width: 98%;
+    }
+    .header_menu_part{
+        width: 98%;
+    }
+    .header_menu_part ul li{
+    margin-top: 5px;
+    margin-right: 24px;
+    }
+    .banner_buttons{
+        
+    margin-left: 24px;
+    }
+    .about_part_img {
+  width: 67%;
+  margin-left: 0;
+}
+    .about_part_icon{
+        width: 61px;
+        margin-top: 30px;
+    }
+    .card_title h2{}
+    .all_courses_btn{margin: 0px 0px 50px 131px;}
+    .event_middle h4{font-size: 27px;text-align: center;margin-top: 20px;}
+    .regi_left{width: 98%;text-align: center;}
+    .banner2_single_item{margin-right: 5px;}
+    .blogs_body{
+    width: 98%;
+    }
+    .left_side_blogs{float: none;}
+    .single_hr_blog{
+        width: 100%;
+       height: auto;
+    }
+    .single_hr_blog_right {float: none;width: 98%;text-align: center;}
+    .blog_inner_btn{margin-bottom: 10px;}
+    .top_footer_part{width: 98%;}
+    .left_top_footer{width: 98%;padding: 20px;}
+    .left_top_footer h3{
+      
+    }
+    .form{margin-left: 10px;}
+    .footer_left{
+        font-size: 12px
+    }
+    
+    
+    
+    
+}
